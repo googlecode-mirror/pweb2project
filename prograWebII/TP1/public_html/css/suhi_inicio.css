@@ -1,0 +1,43 @@
+body {
+    font-family: Arial;
+} 
+
+#cabecera{
+	background-color:#FF3300;
+}
+
+#bienvenido{
+	/*display: inline;*/
+}
+
+p#bienvenido {
+ 
+ color:#8E8E8E;
+ display: inline;
+ float:right;
+ 
+}
+
+#logo{	
+   background-color:#121212;
+   border-top: 5px solid;
+   border-bottom: 5px solid;
+   border-color: #FF3300 #121212 #FF3300 #121212;
+   /*red green blue pink*/
+}
+
+#menu{	
+}
+
+#divIngresar{
+	width: 500px;
+	float:right;
+}
+
+#divIngresarCampos{
+    background-color:#F7F7FD;
+	border: 2px solid;
+	border-color: #A3A3C2 ;
+	width: 500px;
+	float:right;
+}
