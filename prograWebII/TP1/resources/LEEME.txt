@@ -1,0 +1,9 @@
+Colores utilizados
+
+#FF6600 (naranja)
+#FFFFFF (blanco)
+#000000 (negro)
+
+Identificador de los elementos del menu en Jquery UI css
+
+ui-tabs  
