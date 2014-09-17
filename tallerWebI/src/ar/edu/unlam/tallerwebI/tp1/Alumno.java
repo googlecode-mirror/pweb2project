@@ -7,7 +7,7 @@ package ar.edu.unlam.tallerwebI.tp1;
  * TP1
  * @author Irene Alessandrello, 28.408.504
  * @author Rosa Diaz ,23.605.718
- * @author Marcelo Conde ,32.848.659
+ * @author Marcelo Conde ,32.848.659 
  *
  */
 public class Alumno {
