@@ -19,8 +19,8 @@ public class Alumno {
 
 	//atributos
 	// int primerParcial = null; no permite inicializar int
-	   Float primerParcial= null; //nota del primer parcial del alumno
-	   Float segundoParcial = null;
+	   private Float primerParcial= null; //nota del primer parcial del alumno
+	   private Float segundoParcial = null;
 	
 	//getters y setters
 
@@ -50,34 +50,26 @@ public class Alumno {
 		this.setSegundoParcial(new Float(nota));	
 	}
 
-	private Float getNotaFinal(){
-		float suma =0;
-		float promedio=0;
-		
-		if (this.getPrimerParcial() != null) 
-				suma+=this.getPrimerParcial();
-		if (this.getSegundoParcial() != null)
-			    suma+=this.getPrimerParcial();
-		
-		if(suma!=0)
-				promedio=suma/2;
-		
-	    return promedio;	
-	}
 	
 	public boolean estaAprobado() {
 		
-		if (this.getNotaFinal() >= 4)
+		if (    (this.getPrimerParcial()!=null)
+			&&  (this.getPrimerParcial()>= 4)
+			&&  (this.getSegundoParcial() !=null)
+			&&  (this.getSegundoParcial()>=4))
 			return true;
 		else
 			return false;
 	}
 
 	public boolean estaPromocionado() {
-		if (this.getNotaFinal() >= 7)
-			return true;
-		else
-			return false;
+		if (        (this.getPrimerParcial()!=null)
+				&&  (this.getPrimerParcial()>= 7)
+				&&  (this.getSegundoParcial() !=null)
+				&&  (this.getSegundoParcial()>=7))
+				return true;
+			else
+				return false;
 	}
 
 }
