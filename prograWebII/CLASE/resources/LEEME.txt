@@ -1,0 +1,7 @@
+-------------------------------------------------------------------
+URL: http://localhost/workspaceProgWebII/CLASE/public_html/uno.html
+
+Ejemplos hechos en clase:
+
+uno.html + dos.php
+-------------------------------------------------------------------
