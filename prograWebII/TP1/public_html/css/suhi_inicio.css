@@ -79,6 +79,8 @@ p#bienvenido {
 /*  text-align:center; */
 /*  padding:5px; */
 	border-top:2px solid #FF9D5C;
+	position:relative;
+	top:200px;
 }
 #foot_left_arrow{
 		float:left;
