@@ -1,8 +1,12 @@
 Colores utilizados
 
 #FF6600 (naranja)
+#FF8533 (naranja +claro)
+#FF9D5C (naranja ++claro)
 #FFFFFF (blanco)
 #000000 (negro)
+#848484 (gris)
+#F1F1F1 (gris ++claro)
 
 Identificador de los elementos del menu en Jquery UI css
 

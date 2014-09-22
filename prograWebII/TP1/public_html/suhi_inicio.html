@@ -1,4 +1,3 @@
-<!-- suhi_inicio.html --> 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
                       "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 
@@ -21,64 +20,65 @@
 		
 	</head> 
 	
-	 <body id="cuerpo">	
-			
-		 <div id="contenedor"> 
-				
-			<div id="cabecera">
-				
+	<body>
+	
+	<div id="header">
 				<div id="logo">
-					<div id="bienvenido">
-						<p id="bienvenido">DELIVERY ONLINE Bienvenido, visitante <a href="url">Salir</a> </p>
-					</div>
-					<img src="img/logoishidan.PNG" alt="imagenLogoIshidan" >
-				</div>	
-				<div id="menu">
-					
-
-					<div id="tabs">
-						<ul>
-							<li><a href="#tabs-1">INICIO</a></li>
-							<li><a href="#tabs-2">MENU</a></li>
-							<li><a href="#tabs-3">SUCURSALES</a></li>
-						</ul>
-						<div id="tabs-1">
-								<!-- <form id="formRegistracion"  method="post" action="suhi_inicio.html"> <!-- por ahora va a la misma pag hasta que definiamos un action en php :) -->
-								<div id="divIngresar">
-						
-									<p>INGRESAR Delivery Online</p>
-						
-									<div id="divIngresarCampos"> 
-										<label class="tituloElementoDivIngresar">Numero de tel&eacute;fono:</label>
-										<br/>
-										<input class="cajaDeTextoDivIngresar" type="text" name="telefono" />
-										<br/>
-
-										<label class="tituloElementoDivIngresar">Password:</label>
-										<br/>
-										<input class="cajaDeTextoDivIngresar" type="password" name="password" />
-										<br/>
-										<br/> <!-- ver con display:block; -->
-
-										<input type="submit" value="INGRESAR" id="botonAceptarDivIngresar"/>							
-									</div>
-
-								</div> <!-- fin div: divIngresar -->
-								<!-- </form> <!-- fin formIngresar VER: INGRESAR debe ir a un action! -->  			
-						</div>
-						<div id="tabs-2">
-							<p>PESTANIAA2</p>
-						</div>
-						<div id="tabs-3">
-							<p>PESTANIA3</p>
-						</div>
-					</div>
-					
+				<div id="bienvenido">
+					<p id="bienvenido">DELIVERY ONLINE Bienvenido, visitante <a href="url">Salir</a> </p>
 				</div>
-			</div>
-					
-		</div> <!-- cierra div contenedor  -->
-	</body>
-</html>
+				<img src="img/logoishidan.PNG" alt="imagenLogoIshidan" >
+			</div>	
+	</div>	
 
-
+	<div id="menu">
+				<div id="tabs">
+					<ul>
+						<li><a href="#tabs-1">INICIO</a></li>
+						<li><a href="#tabs-2">MEN&Uacute;</a></li>
+						<li><a href="#tabs-3">SUCURSALES</a></li>
+					</ul>
+					<div id="tabs-1">
+<!-- 				  <form id="formRegistracion"  method="post" action="suhi_inicio.html"> por ahora va a la misma pag hasta que definiamos un action en php :) -->
+						<div id="divIngresar">
+							<p><span style="color:#FF8533; font-size:15px; margin-left: 30%;">INGRESAR</span> <span style="font-size:11px">Delivery Online<span></p>
+							<div id="divIngresarCampos"> 
+								<label class="tituloElementoDivIngresar">Numero de tel&eacute;fono:</label>
+								<br/>
+								<input class="cajaDeTextoDivIngresar" type="text" name="telefono" id="telefono"/>
+								<br/>
+								<br/>		
+								<label class="tituloElementoDivIngresar">Contrase&ntilde;a:</label>
+								<br/>
+								<input class="cajaDeTextoDivIngresar" type="password" name="password" />
+								<br/>
+								<br/> <!-- ver con display:block; -->
+								<input class="botonAceptarDivIng" type="submit" value="INGRESAR" id="botonAceptarDivIngresar"/>							
+							</div>		
+						</div> <!-- fin div: divIngresar -->
+<!-- 						</form> <!-- fin formIngresar VER: INGRESAR debe ir a un action!  		 -->
+					</div>
+					<div id="tabs-2">
+						<p>PESTANIAA2</p>
+					</div>
+					<div id="tabs-3">
+						<p>PESTANIA3</p>
+					</div>
+				</div>				
+	</div>			
+	<div id="footer">
+	
+	    <div id="foot_left_arrow">
+	    	<span style="color:#FF8533; font-weight: bold; font-size: 20px">&lt;</span>
+	 	</div>
+	 	<div id="foot_desc">
+		 	 <p><span style="color:#FF8533; font-weight: bold;">Hurlingham:</span> Av.Jauretche 1401 Tel.4665-8888 y 4666-8877</p>
+		 	 <p>Abrimos de martes a domingos  de 19:15 a 23:00 hs.</p> 	 		
+	 	</div>
+	    <div id="foot_right_arrow">
+	    	<span style="color:#FF8533; font-weight: bold; font-size: 20px">&gt;</span>
+	 	</div>
+	</div>
+	
+	</body> 
+</html>	
