@@ -11,4 +11,7 @@ development - contiene el codigo html/php
 library - la idea es que contenga la libreria que arma los datepicker (Calendarios)
 scriptsBD - scripts de base de datos
 
+prueba bd
+http://localhost/workspaceProgWebII/TPFinal/development/testConeccionBD.php
+
 
