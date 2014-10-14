@@ -1,0 +1,14 @@
+Estructura de directorios
+ajax -- contiene código Ajax
+classes - contiene las clases a utilizar
+config -- contiene todo tipo de configuración
+report -- contiene los reportes
+images -- contiene imagenes de la aplicación
+styles -- contiene el css
+templates - contiene los templates de PDF
+javascript - contiene todo codigo Javascript aplicado
+development - contiene el codigo html/php
+library - la idea es que contenga la libreria que arma los datepicker (Calendarios)
+scriptsBD - scripts de base de datos
+
+
