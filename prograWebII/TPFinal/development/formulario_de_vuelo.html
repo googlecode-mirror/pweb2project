@@ -46,7 +46,10 @@ require('calendario.php');
     <div id="calendario">
     <?php calendar_html() ?>
     </div><br/><br/>
-	Fecha Vuelta: <input class="campos" readonly="readonly" type="text" name="datepickerv" id="datepickerv" size="10"> <br/><br/>
+	Fecha Vuelta:  <input type="text" name="fecha" id="fecha"  /> <a onclick="show_calendar()" style="cursor: pointer;"><small>(Seleccionar)</small></a>
+    <div id="calendario">
+    <?php calendar_html() ?>
+    </div><br/><br/>
 	Clase: <select  id="id_clase" name="id_clase" >
 				<option value="Economy">Economy</option>
 				<option value="Primary">Primary</option>
