@@ -1,8 +1,15 @@
- <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<?php
+require('calendario.php');
+?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <html>
 <head>
-	<title>Reservaaaaaaaaaaaaa de Vuelos</title>
+	<title>Reserva de Vuelos</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<script type="text/javascript" src="javascript/jquery-1.3.1.min.js"></script>
+	<script type="text/javascript" src="javascript/jquery.functions.js"></script>
+
 </head>
 <body>
 <div id="cabecera" >
@@ -15,12 +22,31 @@
 	<br/><br/>
 	Origen: <select id="id_origen" name="id_origen">
 				<option value="levanta origenes">levanta todos los origenes</option>
+					<?php
+				$con = new conectar;
+				$query = "SELECT xxxxxxx";
+				$res = $con->SQLExec($query,'xxxxxx');
+				$cant = count($res);
+				for($i=0;$i<$cant-1;$i++){
+				echo "<option value = ".$res[$i][1]." >".$res[$i][1]." - ".$res[$i][0]."</option>";}
+			?>
 			</select><br/><br/>
 	Destino: <select id="id_destino" name="id_destino" >
 				<option value="levanta destinos">levanta todos los destinos</option>
+						<?php
+				$con = new conectar;
+				$query = "SELECT xxxxxxxxxx";
+				$res = $con->SQLExec($query,'xxxxxx');
+				$cant = count($res);
+				for $i=0;$i<$cant-1;$i++){
+				echo "<option value = ".$res[$i][1]." >".$res[$i][1]." - ".$res[$i][0]."</option>";}
+			?>
 			</select><br/><br/>
-	--datepicker 1<br/>
-	--datepicker 2<br/>
+	Fecha ida:  <input type="text" name="fecha" id="fecha"  /> <a onclick="show_calendar()" style="cursor: pointer;"><small>(Seleccionar)</small></a>
+    <div id="calendario">
+    <?php calendar_html() ?>
+    </div><br/><br/>
+	Fecha Vuelta: <input class="campos" readonly="readonly" type="text" name="datepickerv" id="datepickerv" size="10"> <br/><br/>
 	Clase: <select  id="id_clase" name="id_clase" >
 				<option value="Economy">Economy</option>
 				<option value="Primary">Primary</option>
