@@ -7,7 +7,7 @@ function ultimoDia($mes,$ano){
     return $ultimo_dia;
 } 
 
-function calendar_html(){
+function calendar_html($objeto,$texto){
 	$meses= array('Enero','Febrero','Marzo','Abril','Mayo','Junio','Julio','Agosto','Septiembre','Octubre','Noviembre','Diciembre');
 	//$fecha_fin=date('d-m-Y',time());
 	$mes=date('m',time());
@@ -46,12 +46,12 @@ function calendar_html(){
 	 </tr>
 	</table>
 	<div id="calendario_dias">
-	<?php calendar($mes,$anio) ?>
+	<?php calendar($mes,$anio,$objeto,$texto) ?>
 	</div>
 	<?php
 }
 
-function calendar($mes,$anio){
+function calendar($mes,$anio,$objeto_d,$texto_d){
 	$dia=1;
 	if(strlen($mes)==1) $mes='0'.$mes;
 	?>
@@ -89,7 +89,7 @@ function calendar($mes,$anio){
 				if($diames<10) $diames_con_cero='0'.$diames;
 				else $diames_con_cero=$diames;
 
-				echo " <td><a style=\"display:block;cursor:pointer;\" onclick=\"set_date('".$anio."-".$mes."-".$diames_con_cero."')\">".$diames."</a></td> \n";
+				echo " <td><a style=\"display:block;cursor:pointer;\" onclick=\"set_date('".$anio."-".$mes."-".$diames_con_cero."','".$objeto_d."','".$texto_d."')\">".$diames."</a></td> \n";
 				$diames++;
 			}
 			$i++;
