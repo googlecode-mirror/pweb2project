@@ -3,6 +3,7 @@
 $(document).ready(function(){
 	//div donde se mostrará calendario debe estar oculto					   
 	$('#calendario').hide();
+	$('#calendarioV').hide();
 });
 
 function update_calendar(){
@@ -21,13 +22,14 @@ function update_calendar(){
 	});
 }
 	
-function set_date(date){
+function set_date(date,objeto,text){
 	//input text donde debe aparecer la fecha
-	$('#fecha').attr('value',date);
-	show_calendar();
+	$('#'+text).attr('value',date);
+	$('#'+objeto).hide();
+	//show_calendar();
 }
 
-function show_calendar(){
+function show_calendar(objeto){
 	//div donde se mostrará calendario
-	$('#calendario').toggle(); 
+	$('#'+objeto).toggle(); 
 }	
