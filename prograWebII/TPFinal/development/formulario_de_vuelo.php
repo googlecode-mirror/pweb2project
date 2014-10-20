@@ -7,8 +7,8 @@ require('calendario.php');
 <head>
 	<title>Reserva de Vuelos</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<script language="javascript" type="text/javascript" src="javascript/jquery-1.3.1.min.js"></script>
-	<script language="javascript" type="text/javascript" src="javascript/jquery.functions.js"></script>
+	<script language="javascript" type="text/javascript" src="../javascript/jquery-1.3.1.min.js"></script>
+	<script language="javascript" type="text/javascript" src="../javascript/jquery.functions.js"></script>
 
 </head>
 <body>
