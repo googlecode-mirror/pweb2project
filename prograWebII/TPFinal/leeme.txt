@@ -22,3 +22,19 @@ Clave para los commits: aC9Bm8Qu3Yp9
 
 prueba 
 http://localhost/workspaceProgWebII/TPFinal/development/formulario_de_vuelo.php
+
+Modelo de datos
+
+Estados de una RESERVA
+	CON=Confirmada
+	LE=Lista de espera
+	P=Pagada
+	CAN=Cancelada
+	
+Estados de un PASAJE
+	P=Pagado
+	CAN=Cancelado
+	
+Estados de un ASIENTO
+	A=Asignado
+	L=Libre
