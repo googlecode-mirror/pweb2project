@@ -33,8 +33,12 @@ Estados de una RESERVA
 	
 Estados de un PASAJE
 	P=Pagado
-	CAN=Cancelado
+	C=Cancelado
 	
 Estados de un ASIENTO
 	A=Asignado
 	L=Libre
+
+Estados de un VUELO
+	COM=Completo
+	INC=Incompleto
