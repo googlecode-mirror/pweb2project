@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>JavaScript</title>
+
+    <script type="text/javascript">
+
+     // Funciones JavaScript
+	 function cambiarImagen(opcion){	
+    	 if(opcion=="verde"){
+       		document.images[0].src="img/boton_verde.png"
+    	 }else{
+    		 document.images[0].src="img/boton_azul.png"
+    	 }
+     }
+     
+     function validarForm(){
+    	 var dni = document.getElementById("dni").value;
+    	 if(dni.length == 0){
+    		 alert("Complete el dni!");
+    	 }else if (isNaN(dni)){
+    		 alert("Dni no numerico!");
+    	 }else{
+    		 document.getElementById("formulario").submit();
+    	 }
+     }
+    </script>
+	
+	<style type="text/css">
+		body {
+			text-align: center;
+		}
+		input {
+			width: 300px; 
+			padding: 5px;
+			font-size: 20px;
+			margin: 20px;
+		}
+	</style>
+</head>
+
+<body>
+
+	<form id="formulario" name="formulario" method="get" action="#">
+		<input type="text" id="dni" name="name" />
+		<br />
+		<!-- 
+		<a href="#" onclick="validarForm();">
+			<img src="boton_azul.png" alt="Enviar" onmouseover="cambiarImagen('verde');" onmouseout="cambiarImagen('azul');">		
+		</a>
+		 -->
+		<!-- otra forma es con la funcion directamente dentro del href -->
+		<a href="javascript:validarForm();">
+			<img src="img/boton_azul.png" alt="Enviar" onmouseover="cambiarImagen('verde');" onmouseout="cambiarImagen('azul');">
+		</a>
+</form>
+
+</body>
+
+</html>
