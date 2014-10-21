@@ -14,7 +14,7 @@ require('calendario.php');
 </head>
 <body>
 <div id="cabecera" >
-	<img alt="logo" src="../images/logo-american-airlines.jpg"/>
+	<img alt="logo" src="../images/LogoCompania_header.PNG"/>
 </div>
 <form name="form_vuelo" method="POST" action="dias_vuelos.php">
 <h1>Vuelos</h1><br/>
@@ -58,8 +58,11 @@ require('calendario.php');
 </div>			
 	<!--<input type="submit" value="Buscar"> -->
 	<!--<a href="javascript:validarForm();"><img src="../images/botonBuscar.png" alt="Buscar";"> -->
-	<img src="../images/botonBuscar.png" alt="Buscar" onClick="javascript:validarForm();"/>
+	<img src="../images/botonBuscar.png" alt="Buscar" onClick="javascript:validarForm();"/> <br/><br/>
 </form>
+<div id="pie" >
+	<img alt="logo_pie" src="../images/LogoCompania_footer.PNG"/>
+</div>
 </body>
 
 </html>
