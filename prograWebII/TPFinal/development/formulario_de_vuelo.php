@@ -43,11 +43,11 @@ require('calendario.php');
 				echo "<option value = ".$res[$i][1]." >".$res[$i][1]." - ".$res[$i][0]."</option>";}*/
 			?>
 			</select><br/><br/>
-	Fecha ida:<input type="text" name="fecha" id="fecha"  /> <a onclick="show_calendar('calendario');" style="cursor: pointer;"><small>(Seleccionar)</small></a>
+	Fecha ida:<input type="text" name="fecha" id="fecha" readonly="readonly" /> <a onclick="show_calendar('calendario');" style="cursor: pointer;"><small>(Seleccionar)</small></a>
     <div id="calendario">
     <?php calendar_html("calendario","fecha"); ?>
     </div><br/><br/>
-	Fecha Vuelta: <input type="text" name="fechaV" id="fechaV"  /> <a onclick="show_calendar('calendarioV');" style="cursor: pointer;"><small>(Seleccionar)</small></a>
+	Fecha Vuelta: <input type="text" name="fechaV" id="fechaV" readonly="readonly" /> <a onclick="show_calendar('calendarioV');" style="cursor: pointer;"><small>(Seleccionar)</small></a>
     <div id="calendarioV">
     <?php calendar_html("calendarioV","fechaV"); ?>
     </div><br/><br/>
