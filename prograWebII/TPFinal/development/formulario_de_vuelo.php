@@ -54,13 +54,6 @@ require('calendario.php');
 				<option value="Economy">Economy</option>
 				<option value="Primary">Primary</option>
 			</select><br/><br/>
-	Adultos: <select id="id_adulto" name="id_adulto" >
-				<option value="1">1</option>
-				<option value="2">2</option>
-				<option value="3">3</option>
-				<option value="4">4</option>
-				<option value="5">5</option>
-			</select><br/><br/>		
 </div>			
 	<input type="submit" value="Buscar">
 </form>
