@@ -9,7 +9,8 @@ require('calendario.php');
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<script language="javascript" type="text/javascript" src="../javascript/jquery-1.3.1.min.js"></script>
 	<script language="javascript" type="text/javascript" src="../javascript/jquery.functions.js"></script>
-
+	<script language="javascript" type="text/javascript" src="../javascript/Validaciones.js"></script>
+	    
 </head>
 <body>
 <div id="cabecera" >
@@ -55,7 +56,9 @@ require('calendario.php');
 				<option value="Primary">Primary</option>
 			</select><br/><br/>
 </div>			
-	<input type="submit" value="Buscar">
+	<!--<input type="submit" value="Buscar"> -->
+	<!--<a href="javascript:validarForm();"><img src="../images/botonBuscar.png" alt="Buscar";"> -->
+	<img src="../images/botonBuscar.png" alt="Buscar" onClick="javascript:validarForm();"/>
 </form>
 </body>
 

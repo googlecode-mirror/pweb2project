@@ -9,14 +9,18 @@
 $idayvuelta=$_POST['id_idayvuelta'];
 $origen=$_POST['id_origen'];
 $destino=$_POST['id_destino'];
+$fechaIda=$_POST['fecha'];
+$fechaVuelta=$_POST['fechaV'];
 $clase=$_POST['id_clase'];
-$adulto=$_POST['id_adulto'];
+
 
 echo "Ida y vuelta:"; echo $_POST['id_idayvuelta']; echo "<br/>";
 echo "Origen: "; echo $_POST['id_origen']; echo "<br/>";
 echo "Destino: "; echo $_POST['id_destino']; echo "<br/>";
+echo "Fecha de Ida: "; echo $_POST['fecha']; echo "<br/>";
+echo "Fecha de Vuelta: "; echo $_POST['fechaV']; echo "<br/>";
 echo "Clase: "; echo $_POST['id_clase']; echo "<br/>";
-echo "Adultos: "; echo $_POST['id_adulto']; echo "<br/>";
+
 ?>
 
 
