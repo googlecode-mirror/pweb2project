@@ -42,3 +42,41 @@ Estados de un ASIENTO
 Estados de un VUELO
 	COM=Completo
 	INC=Incompleto
+	
+-----------------------------------------------------
+Errores ocurridos
+
+http://stackoverflow.com/questions/4015253/mysql-connect-doesnt-work-with-localhost-on-my-windows-machine
+-----------------------------------------------------
+TO DO
+
+CSSs
+
+dejar la primer opcion del combo de ciudad origen y destino vacias
+
+-----------------------------------------------------
+Cambios y commits
+
+26/10/2014
+irene.alessandrello
+1) formulario_de_vuelo.php
+Se reemplaza el archivo formulario_de_vuelo.php
+Se guarda el original con el nombre formulario_de_vuelo_old.php
+El nuevo formulario_de_vuelo.php es igual (con  la suma de funcionalidad php del primer combo)
+solo se reemplazo ya que el archivo original tenia metadata que se mostraba como
+
+2)Datos-TP.xls
+Se quitan los tildes de las desc de ciudad
+TO_DO: Usar htmlcodes para las palabras con tilde
+
+3) scriptsBD
+Se modifican los inserts de la tabla ciudad para que 
+no incluya descripciones con tildes.
+TO_DO: Usar htmlcodes para las palabras con tilde
+
+
+
+ 
+error en la consola.
+	
+	
