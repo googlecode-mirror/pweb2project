@@ -50,10 +50,10 @@ http://stackoverflow.com/questions/4015253/mysql-connect-doesnt-work-with-localh
 -----------------------------------------------------
 TO DO
 
-CSSs
-
-dejar la primer opcion del combo de ciudad origen y destino vacias
-
+- CSSs
+- dejar la primer opcion del combo de ciudad origen y destino vacias
+- poner los datos de conexion de la bd en un archivo aparte login.php
+- modularizar la conexion a la base de datos en una sola funcion 
 -----------------------------------------------------
 Cambios y commits
 
@@ -74,6 +74,22 @@ Se modifican los inserts de la tabla ciudad para que
 no incluya descripciones con tildes.
 TO_DO: Usar htmlcodes para las palabras con tilde
 
+4) formulario_de_vuelo.php
+Modifique el action (idem dias_vuelos) para redirigir
+a nuevo archivo con nombre identificatorio de la busqueda
+de vuelos segun parametros ingresados.
+
+5) vuelos_busqueda.php
+Nuevo archivo con nombre identificatorio de 
+la busqueda de vuelos disponibles
+
+6) formulario_de_vuelo.js
+Nuevo archivo javascript para las funciones
+que utilice la pagina  "formulario_de_vuelo"
+
+7) Validaciones.js
+Se comentan las validaciones para probar el submit.
+Se agrega submit de form.
 
 
  
