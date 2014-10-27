@@ -1,12 +1,16 @@
 function validarForm(){
+    
+	//alert("validarForm()");
+    
 	var err = '';
 	var fecha = document.getElementById("fecha");
 	var origen = document.getElementById("id_origen");
 	var destino = document.getElementById("id_destino");
 	var fechaV = document.getElementById("fechaV");
 	var clase = document.getElementById("id_clase");
-		
-	if (fecha.value == ""){
+	
+	//TEMP Comento las validaciones para probar submit
+	/*if (fecha.value == ""){
 		err += "Debe seleccionar una fecha de ida \n";
 		}
 	if	((fecha.value > fechaV.value)||(fecha.value == fechaV.value)){
@@ -29,5 +33,14 @@ function validarForm(){
 		document.form_vuelo.submit();
 	}else{
 		alert(err);
-  }
+  }*/
+	//alert("validarForm()");
+	//alert("$(#form_vuelo_id).attr('id'): "+ $("#form_vuelo_id").attr('id'));
+	
+	
+	/*
+	 * Si cumple con todas las validaciones
+	 * se submitea el formulario
+	 */
+	$("#form_vuelo_id").submit();
   }
