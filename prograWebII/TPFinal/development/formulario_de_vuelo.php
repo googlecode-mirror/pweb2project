@@ -8,13 +8,14 @@ require('calendario.php');
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<script language="javascript" type="text/javascript" src="../javascript/jquery-1.3.1.min.js"></script>
 		<script language="javascript" type="text/javascript" src="../javascript/jquery.functions.js"></script>
+		<script language="javascript" type="text/javascript" src="../javascript/formulario_de_vuelo.js"></script>
 		<script language="javascript" type="text/javascript" src="../javascript/Validaciones.js"></script>    
 	</head>
 	<body>
 		<div id="cabecera" >
 			<img alt="logo" src="../images/LogoCompania_header.PNG"/>
 		</div>
-		<form action="dias_vuelos.php" name="form_vuelo" method="POST">
+		<form action="vuelos_busqueda.php" name="form_vuelo" method="POST" id="form_vuelo_id">
 			<h1>Vuelos</h1><br/>
 			<div id="formulario">
 			
@@ -24,9 +25,8 @@ require('calendario.php');
 				<br/><br/>
 			
 				<label for="origen">Origen:</label>
-				<select id="id_origen" name="origen">
-					<!-- <option value="levanta origenes">levanta todos los origenes</option> -->
-					<?php
+				<select id="id_origen" name=id_origen>
+				<?php
 					// Conectando a la base de datos
 					// mi bd no tiene password!
 					//$conexion  = mysql_connect("localhost", "root", "") or die("No se pudo conectar: " . mysql_error());
@@ -39,31 +39,31 @@ require('calendario.php');
 					$conexion  = mysql_connect("127.0.0.1", "root", "");
 					if (!$conexion)
 						die("No se pudo conectar a MySql: " . mysql_error());
-					else 	
-						echo "Se conect&#243; a MySql. Identificador de enlace de MySQL: $conexion \n";
+					//else 	
+						//echo "Se conect&#243; a MySql. Identificador de enlace de MySQL: $conexion \n";
 					
 					// Seleccionando la base de datos
 					
 					if(!mysql_select_db("tp_pWeb_database"))
 						die("No se pudo seleccionar la base de datos");
-					else
-						echo "\nSe seleccion&#243; una base de datos.\n";
+					//else
+						//echo "\nSe seleccion&#243; una base de datos.\n";
 
 					// Armo la consulta en una variable string 
 					$consulta  = "select c_cod, c_desc from ciudad";
 					
-					echo "La consulta que haremos ser&#225;: $consulta \n";
+					//echo "La consulta que haremos ser&#225;: $consulta \n";
 					
 					//Ejecuto la consulta
  					$result = mysql_query($consulta);
 					if (!$result) {
 						die('Consulta no válida: ' . mysql_error());
-					}else 
-						echo "Se ejecut&#243; la consulta correctamente: $result \n";
+					}//else 
+						//echo "Se ejecut&#243; la consulta correctamente: $result \n";
 					
 					//Cantidad de filas retornadas por la consulta
 					$numero_filas = mysql_num_rows($result);
-					echo "Se recuperaron $numero_filas Filas\n";
+					//echo "Se recuperaron $numero_filas Filas\n";
  					
 					//echo "<option> </option>"; //primer opcion vacia
 					if($result!=NULL){
@@ -71,16 +71,16 @@ require('calendario.php');
 							while( $row=mysql_fetch_array($result) ){
 								//here you can work with the results... 12
 								//echo "c_cod: ".$row['c_cod']." c_desc: ".$row['c_desc'];
-								echo "<option>".$row['c_desc']."</option>";
+								echo "<option value=\"".$row['c_cod']."\"".">".$row['c_desc']."</option>";
 							}
-						}else{
+						}//else{
 							//no results, you can put a message here...
-						}
+						//}
 						mysql_free_result($result);
 					}					
 					// Cerrar la conexión
 					mysql_close($conexion);
-					?>
+				?>
 				</select>
 			    
 			    <br/><br/>	
