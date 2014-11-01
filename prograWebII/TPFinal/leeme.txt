@@ -1,4 +1,5 @@
 nueva linea ire
+nueva linea ire 2
 Estructura de directorios
 ajax -- contiene código Ajax
 classes - contiene las clases a utilizar
