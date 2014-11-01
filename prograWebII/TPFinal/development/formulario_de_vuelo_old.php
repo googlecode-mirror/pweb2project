@@ -15,7 +15,7 @@ require('calendario.php');
 	<div id="cabecera" >
 		<img alt="logo" src="../images/LogoCompania_header.PNG"/>
 	</div>
-	<form name="form_vuelo"  action="dias_vuelos.php" method="POST">
+	<form name="form_vuelo"  action="dias_vuelos.php" method="post">
 		<h1>Vuelos</h1><br/>
 		<div id="formulario">	
 			<input type="radio" id="id_idayvuelta" name="id_idayvuelta" checked="checked">
