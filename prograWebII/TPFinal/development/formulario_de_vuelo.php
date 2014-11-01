@@ -15,7 +15,7 @@ require('calendario.php');
 		<div id="cabecera" >
 			<img alt="logo" src="../images/LogoCompania_header.PNG"/>
 		</div>
-		<form action="vuelos_busqueda.php" name="form_vuelo" method="POST" id="form_vuelo_id">
+		<form action="vuelos_busqueda.php" name="form_vuelo" method="post" id="form_vuelo_id">
 			<h1>Vuelos</h1><br/>
 			<div id="formulario">
 			
