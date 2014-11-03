@@ -1,5 +1,3 @@
-nueva linea ire -- nueva linea prueba
-nueva linea ire 2
 Estructura de directorios
 ajax -- contiene código Ajax
 classes - contiene las clases a utilizar
@@ -12,19 +10,15 @@ javascript - contiene todo codigo Javascript aplicado
 development - contiene el codigo html/php
 library - la idea es que contenga la libreria que arma los datepicker (Calendarios)
 scriptsBD - scripts de base de datos
-
+---------------------------------------------------------------------------------
 prueba bd
 http://localhost/workspaceProgWebII/TPFinal/development/testConeccionBD.php
-
-............ nueva linea
-
-
-
-Clave para los commits: aC9Bm8Qu3Yp9
-
+---------------------------------------------------------------------------------
+aC9Bm8Qu3Yp9
+---------------------------------------------------------------------------------
 prueba 
 http://localhost/workspaceProgWebII/TPFinal/development/formulario_de_vuelo.php
-
+---------------------------------------------------------------------------------
 Modelo de datos
 
 Estados de una RESERVA
@@ -53,9 +47,23 @@ http://stackoverflow.com/questions/4015253/mysql-connect-doesnt-work-with-localh
 TO DO
 
 - CSSs
+
 - dejar la primer opcion del combo de ciudad origen y destino vacias
+  @SUGGESTION
+  se podria usar un primer <option value=""></option>
+  
 - poner los datos de conexion de la bd en un archivo aparte login.php
-- modularizar la conexion a la base de datos en una sola funcion 
+  
+- modularizar la conexion a la base de datos en una sola funcion
+  @DONE Se creo el archivo mysql.php que contiene la clase MySQL
+  con las funciones de uso comun para conectarse a la bd
+
+- extraer las variables reutilizadas (ej $consulta)
+  como variable globales
+  
+- agregar un order by a la consulta que llena los combos
+  de ciudad origen y destino para que se muestren ordenados
+     
 -----------------------------------------------------
 Cambios y commits
 
@@ -94,7 +102,71 @@ Se comentan las validaciones para probar el submit.
 Se agrega submit de form.
 
 
- 
+--------------------------------------------------------------------------------- 
 error en la consola.
+---------------------------------------------------------------------------------
+Flujo normal de uso de la aplicacion:
+
+1) Buscar vuelos disponibles para reservar
+   Pantalla inicial:
+   http://localhost/workspaceProgWebII/TPFinal/development/formulario_de_vuelo.php
+   
+   Js de validaciones:
+   formulario_de_vuelo.js
+   
+   Pantalla destino donde muestra el resultado de la busqueda:
+   vuelos_busqueda.php
+   
+   
+2) Reservar
+   ... completar.
+   
+3) Pagar (Checkin)
+   ... completar.
+
+---------------------------------------------------------------------------------
+Fuentes
+Clase mysql: http://www.webtutoriales.com/articulos/clase-para-conectar-php-con-mysql
+---------------------------------------------------------------------------------
+Juegos de datos:
+
+origen: Concordia
+destino: Dolores
+resultado: Hay vuelos
+
+
+---------------------------------------------------------------------------------
+Consultas
+
+1) Por que no funciona el $(window).load(function(){ ...?
+2) No se ejecuta el javascrip en Mozilla Firefox
+3) ...
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+TP FINAL COMMITS 03/11/2014
+
+1) TPFinal/classes/mysql.php
+   irene.alessandrello - Nueva clase de conexion a bd 
+   
+2) TPFinal/development/formulario_de_vuelo.php   
+   irene.alessandrello - Se agrega logica para carga del combo ciudad destino usando la nueva clase de conexion a bd 
+
+3) TPFinal/development/formulario_pasajero.html
+   irene.alessandrello - Se modifica el titulo del formulario para indicar que se trata de los datos de un solo pasajero
+
+4) TPFinal/development/vuelos_busqueda.php
+   irene.alessandrello - Se modifica la logica para obtener el parametro ciudad destino desde el post
+   e incluirlo en la consulta de vuelos disponibles. 
+   Se agrega boton de submit (provisorio) para confirmar reserva e ingresar los datos del pasajero.   
+   
+5) TPFinal/javascript/formulario_de_vuelo.js
+   irene.alessandrello - Se descomenta la validacion de parametro ciudad de destino ya que se agrego
+   la logica para que el combo desplegable de la pantalla de busqueda de vuelos entregue este dato. 
+
+6) TPFinal/scriptsBD/DML - v2.sql
+   irene.alessandrello - Se agregan consultas utiles para pruebas.   
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
 	
 	
