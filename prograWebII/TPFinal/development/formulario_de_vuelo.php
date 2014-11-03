@@ -9,7 +9,7 @@ require('calendario.php');
 		<script language="javascript" type="text/javascript" src="../javascript/jquery-1.3.1.min.js"></script>
 		<script language="javascript" type="text/javascript" src="../javascript/jquery.functions.js"></script>
 		<script language="javascript" type="text/javascript" src="../javascript/formulario_de_vuelo.js"></script>
-		<script language="javascript" type="text/javascript" src="../javascript/Validaciones.js"></script>    
+
 	</head>
 	<body>
 		<div id="cabecera" >
@@ -82,26 +82,34 @@ require('calendario.php');
 					mysql_close($conexion);
 				?>
 				</select>
-			    
 			    <br/><br/>	
 			    
 				<label for="destino">Destino:</label>
-				<select id="id_destino" name="destino" >
-					<option value="levanta destinos">levanta todos los destinos</option>
+				<select id="id_destino" name="id_destino" >
+					<option value=""></option>
 					<?php
-						/*$con = new conectar;
-						$query = "SELECT xxxxxxxxxx";
-						$res = $con->SQLExec($query,'xxxxxx');
-						$cant = count($res);
-						for $i=0;$i<$cant-1;$i++){
-						echo "<option value = ".$res[$i][1]." >".$res[$i][1]." - ".$res[$i][0]."</option>";}*/
+					    include("../classes/mysql.php");
+					    $db = new MySQL();						
+						// Armo la consulta en una variable string 
+						$consulta  = "select c_cod, c_desc from ciudad";						 
+					    $result = $db->consulta("select c_cod, c_desc from ciudad");
+					    if($result!=NULL){
+					    	if(mysql_num_rows($result)>0){
+					    		while( $row=mysql_fetch_array($result) ){
+					    			echo "<option value=\"".$row['c_cod']."\"".">".$row['c_desc']."</option>";
+					    		}
+					    	}
+					    	$db -> freeResult($result);
+					    }
+					    // Cerrar la conexión					    
+					    $db ->closeConection();					    	
 					?>
 				</select>
 				<br/><br/>
 			
-				Fecha ida:
-				<input type="text" name="fecha" id="fecha" readonly="readonly" /> 
-				<a onclick="show_calendar('calendario');" style="cursor: pointer;">
+			    <label for="fecha_ida">Fecha ida:</label>
+				<input type="text" name="fecha_ida" id="fecha_ida" /> 
+				<a onclick="show_calendar('calendario');">
 					<small>(Seleccionar)</small>
 				</a>
     		
@@ -111,22 +119,25 @@ require('calendario.php');
     		
     			<br/><br/>
 			
-				Fecha Vuelta: 
-				<input type="text" name="fechaV" id="fechaV" readonly="readonly" /> <a onclick="show_calendar('calendarioV');" style="cursor: pointer;"><small>(Seleccionar)</small></a>
+			    <label for="fecha_vuelta">Fecha Vuelta:</label>
+				<input type="text" name="fecha_vuelta" id="fecha_vuelta" /> 
+				<a onclick="show_calendar('calendarioV');">
+					<small>(Seleccionar)</small>
+				</a>
     			<div id="calendarioV">
-    				<?php calendar_html("calendarioV","fechaV"); ?>
+    				<?php calendar_html("calendarioV","fechaV");?>
     			</div>
     			<br/><br/>
 	
-				Clase: <select  id="id_clase" name="id_clase" >
+				<label for="id_clase">Clase:</label>
+				<select  id="id_clase" name="id_clase" >
 				<option value="Economy">Economy</option>
 					<option value="Primary">Primary</option>
 				</select>
 				<br/><br/>
 			</div>			
-			<!--<input type="submit" value="Buscar"> -->
-			<!--<a href="javascript:validarForm();"><img src="../images/botonBuscar.png" alt="Buscar";"> -->
-			<img src="../images/botonBuscar.png" alt="Buscar" onClick="javascript:validarForm();"/> <br/><br/>
+			<img src="../images/botonBuscar.png" alt="Buscar" id="boton_buscar_id"/>
+			<br/><br/>
 		</form>
 		<div id="pie" >
 			<img alt="logo_pie" src="../images/LogoCompania_footer.PNG"/>
