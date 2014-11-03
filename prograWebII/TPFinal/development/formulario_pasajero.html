@@ -4,7 +4,7 @@
 <div id="cabecera" >
 	<img alt="logo" src="../images/LogoCompania_header.PNG"/>
 </div>
-<b>Completar pasajeros de vuelo </b> <br><br>
+<b>Completar datos del pasajero </b> <br><br>
 Ingrese el nombre completo y el apellido tal como aparece en el documento a ser presentado en el momento del embarque<br><br>
 <FORM  METHOD="POST" ACTION="formulario_pasajero_datos.php">
 <!--  -->
@@ -13,8 +13,8 @@ Ingrese el nombre completo y el apellido tal como aparece en el documento a ser 
    $cadena = $_POST['cadena']; 
    print ($cadena);
 ?>
-   Nombre* &nbsp; <INPUT TYPE="text" NAME=”"Nombre" value="Ingrese su nombre" size="30"> &nbsp; &nbsp;
-   Apellido* &nbsp; <INPUT TYPE="text" NAME=”"apellido" value="Ingrese su apellido" size="30"> <br><br>
+   Nombre* &nbsp; <INPUT TYPE="text" NAME="Nombre" value="Ingrese su nombre" size="30"> &nbsp; &nbsp;
+   Apellido* &nbsp; <INPUT TYPE="text" NAME="apellido" value="Ingrese su apellido" size="30"> <br><br>
    Documento de Identidad* &nbsp; DNI &nbsp; <INPUT TYPE="text" NAME="dni" value="Ingrese su DNI" size="30"> &nbsp; &nbsp;
    <br><br>
    Fecha de nacimiento* &nbsp; 
@@ -93,7 +93,7 @@ Ingrese el nombre completo y el apellido tal como aparece en el documento a ser 
 Tel&eacute;fono* &nbsp; <INPUT TYPE="text" NAME="tel1" value="Argentina(54)" size="30"> 
 Tel&eacute;fono &nbsp; <INPUT TYPE="text" NAME="tel2" value="M&oacute;vil" size="30"> <br><br> 
 Correo electronico* <br> <INPUT TYPE="text" NAME="correo" value="Ingrese su Correo Electronico" size="50"><br><br> 
-Reconfirmar correo electronico* <br> <INPUT TYPE="text" NAME=”"correo" value="Reingrese su Correo Electronico" size="50"><br><br> 
+Reconfirmar correo electronico* <br> <INPUT TYPE="text" NAME="correo" value="Reingrese su Correo Electronico" size="50"><br><br> 
 <INPUT TYPE="submit" VALUE="Aceptar"> 
 Acepte para continuar <br>
 </div>	
