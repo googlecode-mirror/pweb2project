@@ -16,12 +16,12 @@ require('calendario.php');
 		<img alt="logo" src="../images/LogoCompania_header.PNG"/>
 	</div>
 	<form name="form_vuelo"  action="dias_vuelos.php" method="post">
-		<h1>Vuelos</h1><br/>
+		<h2>Vuelos</h2><br/>
 		<div id="formulario">	
-			<input type="radio" id="id_idayvuelta" name="id_idayvuelta" checked="checked">
-			Ida y Vuelta
+			<!-- <input type="radio" id="id_idayvuelta" name="id_idayvuelta" checked="checked"> -->
+			<b>Ida y Vuelta</b>
 			<br/><br/>
-			<label for="origen">Origen:</label>
+			<label for="origen">Origen &nbsp; &nbsp; &nbsp; </label>
 			<select id="id_origen" name="origen">
 				<option value="levanta origenes">levanta todos los origenes</option>
 				<?php
@@ -55,7 +55,7 @@ require('calendario.php');
 				
 			<br/><br/>
 				
-			<label for="destino">Destino:</label>
+			<label for="destino">Destino &nbsp; &nbsp; </label>
 			<select id="id_destino" name="destino" >
 			<option value="levanta destinos">levanta todos los destinos</option>
 			<?php
@@ -69,7 +69,7 @@ require('calendario.php');
 			</select>
 			<br/><br/>
 			
-			Fecha ida:
+			Fecha ida &nbsp;&nbsp;&nbsp;&nbsp;
 			<input type="text" name="fecha" id="fecha" readonly="readonly" /> 
 			<a onclick="show_calendar('calendario');" style="cursor: pointer;">
 				<small>(Seleccionar)</small>
@@ -81,14 +81,14 @@ require('calendario.php');
     		
     		<br/><br/>
 			
-			Fecha Vuelta: 
+			Fecha Vuelta 
 			<input type="text" name="fechaV" id="fechaV" readonly="readonly" /> <a onclick="show_calendar('calendarioV');" style="cursor: pointer;"><small>(Seleccionar)</small></a>
     		<div id="calendarioV">
     			<?php calendar_html("calendarioV","fechaV"); ?>
     		</div>
     		<br/><br/>
 	
-			Clase: <select  id="id_clase" name="id_clase" >
+			Clase &nbsp; &nbsp; &nbsp; &nbsp; <select  id="id_clase" name="id_clase" > 
 			<option value="Economy">Economy</option>
 			<option value="Primary">Primary</option>
 			</select>

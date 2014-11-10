@@ -44,3 +44,17 @@ function validarForm(){
 	 */
 	$("#form_vuelo_id").submit();
   }
+  
+  
+ function checkemail (correo)
+{ 
+	var ind1, ind2, ind3;
+	ind1 = correo.indexOf('@');
+	ind2 = correo.indexOf('.');
+	ind3 = correo.lastIndexOf('@');
+	if (( ind1<=0) || (ind2<ind1) || (ind3 !=ind1))
+		return "No es correcto";
+		else
+			return "Correcto";
+		
+	}
