@@ -46,7 +46,7 @@ http://stackoverflow.com/questions/4015253/mysql-connect-doesnt-work-with-localh
 -----------------------------------------------------
 TO DO
 
-- CSSs
+- CSSs - lo haria yo- marcelo conde
 
 - dejar la primer opcion del combo de ciudad origen y destino vacias
   @SUGGESTION
@@ -119,10 +119,10 @@ Flujo normal de uso de la aplicacion:
    
    
 2) Reservar
-   ... completar.
+   ... completar. lo haria yo- marcelo conde
    
 3) Pagar (Checkin)
-   ... completar.
+   ... completar. lo haria yo- marcelo conde
 
 ---------------------------------------------------------------------------------
 Fuentes
