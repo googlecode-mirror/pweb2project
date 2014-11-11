@@ -46,13 +46,13 @@ http://stackoverflow.com/questions/4015253/mysql-connect-doesnt-work-with-localh
 -----------------------------------------------------
 TO DO
 
-- CSSs - lo haria yo- marcelo conde
+- CSSs - lo hace Rosa!!!
 
 - dejar la primer opcion del combo de ciudad origen y destino vacias
   @SUGGESTION
   se podria usar un primer <option value=""></option>
   
-- poner los datos de conexion de la bd en un archivo aparte login.php
+- poner los datos de conexion de la bd en un archivo aparte login.php 
   
 - modularizar la conexion a la base de datos en una sola funcion
   @DONE Se creo el archivo mysql.php que contiene la clase MySQL
@@ -62,7 +62,7 @@ TO DO
   como variable globales
   
 - agregar un order by a la consulta que llena los combos
-  de ciudad origen y destino para que se muestren ordenados
+  de ciudad origen y destino para que se muestren ordenados  lo hago yo Marcelo conde
      
 -----------------------------------------------------
 Cambios y commits
