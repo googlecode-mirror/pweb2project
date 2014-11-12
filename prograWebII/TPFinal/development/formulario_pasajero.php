@@ -101,7 +101,7 @@
 	
 
   return true; //Si ha llegado hasta aquí, es que todo es correcto
-}  // fin de la funcion validar
+}  // fin de la funcion validar   
 
 
 </script>
