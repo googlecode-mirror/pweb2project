@@ -166,6 +166,18 @@ TP FINAL COMMITS 03/11/2014
 6) TPFinal/scriptsBD/DML - v2.sql
    irene.alessandrello - Se agregan consultas utiles para pruebas.   
 ---------------------------------------------------------------------------------
+12/11
+
+Rosa Diaz
+1)TPFinal/development/formulario_pasajero_datos   
+cambio de html a .php   
+contiene las validaciones del formulario en php
+
+2)secuencia: formulario_pasajero.php -->ingreso datos del pasajero. Validaciones con javascript
+	     formulario_pasajero_datos --> asigno los datos ingresados a las variables php
+	     confirmar_reserva --> el pasajero verifica los datos del vuelo y confirma o cancela la operacion
+		si confirma --> pasa a generar el codigo de reserva
+		si cancela la operacion --> vuelve a pagina de busqueda de vuelos(inicio)
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 	

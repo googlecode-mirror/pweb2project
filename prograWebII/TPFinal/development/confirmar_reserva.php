@@ -27,21 +27,21 @@ REVISION DEL ITINERARIO
 <div id="itinerario">
 <?php
 	echo "SALIDA" ; echo "<br/>";
-	echo "Fecha: "; echo $_POST['fechaIda']; echo "<br/>";
+	echo "Fecha: "; echo $_POST['fechaIda']; echo "<br/>"; 
 	echo "Desde: "; echo $_POST['$origen']; echo "<br/>";
 	echo "Hasta: "; echo $_POST['id_destino']; echo "<br/>";
 	echo "Clase: "; echo $_POST['id_clase']; echo "<br/>";
-
+	echo "<br/>";
 	echo "REGRESO"; echo "<br/>";
 	echo "Fecha: "; echo $_POST['fechaV']; echo "<br/>";
 	echo "Desde: "; echo $_POST['id_destino']; echo "<br/>";
 	echo "Hasta: "; echo $_POST['$origen']; echo "<br/>";
 	echo "Clase: "; echo $_POST['id_clase']; echo "<br/>";
-
+	echo "<br/>";
 	echo "PASAJERO:";      echo "<br/>";
 	echo $_POST['nombre']; echo " "; echo $_POST['apellido']; echo "<br/>";
 	echo "DNI: ";          echo $_POST['dni']; echo "<br/>";
-
+	echo "<br/>";
 	echo "DETALLE DEL TOTAL A PAGAR"; echo "<br/>";    // extraer los datos de la base de datos y realizar los calculos
 	echo "Tarifa Base:     ";      echo "$....."; echo "<br/>"; 
 	echo "Tasas e Impuestos:  ";   echo "$....."; echo "<br/>";

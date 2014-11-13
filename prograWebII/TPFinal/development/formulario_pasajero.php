@@ -113,8 +113,8 @@
 </div>
 <h2><b>Datos del pasajero</b></h2> <br>
 Ingrese el nombre completo y el apellido tal como aparece en el documento a ser presentado en el momento del embarque<br><br>
-<!--<FORM  METHOD="POST" ACTION="formulario_pasajero_datos.html">-->
-<form name="formulario" method="post" action="formulario_pasajero_datos.html" onsubmit="return validar(this);">
+
+<form name="formulario" method="post" action="formulario_pasajero_datos.php" onsubmit="return validar(this);">
 <!--  -->
 <div id="formulario">	
    Nombre* &nbsp; <INPUT TYPE="text" NAME="nombre" value="Ingrese su nombre" size="30"> &nbsp; &nbsp;
