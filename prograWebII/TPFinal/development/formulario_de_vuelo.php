@@ -108,8 +108,8 @@ require('calendario.php');
 				<br/><br/>
 			
 			    <label for="fecha_ida">Fecha ida:</label>
-				<input type="text" name="fecha_ida" id="fecha_ida" /> 
-				<a onclick="show_calendar('calendario');">
+				<input type="text" name="fecha_ida" id="fecha_ida" readonly="readonly"/> 
+				<a onclick="show_calendar('calendario');" style="cursor: pointer;">
 					<small>(Seleccionar)</small>
 				</a>
     		
@@ -120,7 +120,7 @@ require('calendario.php');
     			<br/><br/>
 			
 			    <label for="fecha_vuelta">Fecha Vuelta:</label>
-				<input type="text" name="fecha_vuelta" id="fecha_vuelta" /> 
+				<input type="text" name="fecha_vuelta" id="fecha_vuelta" readonly="readonly"/> 
 				<a onclick="show_calendar('calendarioV');">
 					<small>(Seleccionar)</small>
 				</a>
